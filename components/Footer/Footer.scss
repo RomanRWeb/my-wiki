@@ -1,0 +1,11 @@
+@use "../../constants/variables";
+
+.footer{
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  justify-content: center;
+  margin-top: auto;
+  @include variables.glass-looking;
+  border-radius: variables.$border-radius variables.$border-radius 0 0;
+}

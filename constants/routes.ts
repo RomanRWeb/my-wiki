@@ -1,0 +1,10 @@
+export const ROOT_ROUTE: string = "/";
+export const SEMANTIC_TAGS_ROUTE: string = "/HTML/semantic-tags";
+export const TABLES_ROUTE:string = "/HTML/tables";
+export const HEAD_ROUTE:string = "/HTML/about-head-tag";
+export const FORMS_ROUTE:string = "/HTML/forms";
+export const SELECTOR_ROUTE:string = "/CSS/selectors"
+export const CONTAINERS_ROUTE:string = "/CSS/containers";
+export const POSITIONS_ROUTE:string = "/CSS/positions";
+export const GRADIENT_ROUTE:string = "/CSS/gradients";
+export const STRING_ROUTES:string = "/JS/strings"

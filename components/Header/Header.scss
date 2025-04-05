@@ -1,0 +1,37 @@
+@use "../../constants/variables.scss";
+
+.header {
+  display: flex;
+  height: 54px;
+  align-items: center;
+  justify-content: space-between;
+  @include variables.glass-looking;
+  border-radius: 0 0 variables.$border-radius variables.$border-radius;
+
+  .header__icon-link {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    height: 100%;
+
+    .header__icon {
+      filter: drop-shadow(2px 2px 3px variables.$shadow);
+      transition: filter 0.3s ease-in-out;
+
+      &:hover {
+        filter: drop-shadow(2px 2px 3px variables.$active-shadow);
+      }
+    }
+  }
+
+  .header__name {
+    text-align: center;
+    paint-order: stroke fill;
+    text-shadow: 2px 2px 0 variables.$primary;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    flex: 2;
+    margin: auto;
+  }
+}

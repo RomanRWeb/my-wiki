@@ -1,0 +1,183 @@
+@use "../constants/variables";
+
+
+.body {
+  display: flex;
+  z-index: 0;
+  box-sizing: border-box;
+  max-height: 100%;
+  overflow: hidden;
+  font-family: Arial, system-ui, sans-serif;
+  background-color: variables.$background-color;
+  max-width: 100vw;
+
+  .body__blobs-container {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &:after{
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(farthest-corner at 0px 0px, rgb(0, 29, 34) 0%, rgb(0, 35, 43) 30%, rgb(0, 41, 55) 64%, rgb(0, 48, 38) 100%);
+    }
+
+    .body__blobs-container__blob1 {
+      content: "";
+      top: -5%;
+      right: 0;
+      position: absolute;
+      background: linear-gradient(120deg, #6900ff 0%, #9951ff 100%);
+      border-radius: 31% 42% 31% 64% / 36% 53% 28% 46%;
+      filter: blur(1px);
+      animation: blobingBig 6s infinite ease-in-out;
+      @include variables.blob-looking;
+      @include variables.blobSize(8, 12);
+    }
+
+    .body__blobs-container__blob2 {
+      content: "";
+      top: 65%;
+      right: 45%;
+      position: absolute;
+      background: linear-gradient(0deg, rgba(18, 154, 120, 0.5) 0%, rgba(16, 80, 136, 0.5) 100%);
+      border-radius: 31% 42% 31% 64% / 36% 53% 28% 46%;
+      filter: blur(3px);
+      animation: blobingBig 7s infinite ease-in-out;
+      @include variables.blobSize(10, 8);
+      @include variables.blob-looking;
+    }
+
+    .body__blobs-container__blob3 {
+      content: "";
+      top: 75%;
+      right: 75%;
+      position: absolute;
+      background: linear-gradient(0deg, rgba(20, 170, 28, 0.5) 0%, rgba(19, 163, 127, 0.5) 100%);
+      border-radius: 31% 42% 31% 64% / 36% 53% 28% 46%;
+      filter: blur(2px);
+      animation: blobingBig 9s infinite ease-in-out;
+      @include variables.blobSize(15, 15);
+      @include variables.blob-looking;
+    }
+
+    .body__blobs-container__blob4 {
+      content: "";
+      position: absolute;
+      top: 55%;
+      right: 10%;
+      background: linear-gradient(0deg, #13a19e 0%, #097191 100%);
+      border-radius: 54% 25% 25% 56% / 46% 25% 42% 40%;
+      filter: blur(1px);
+      animation: blobingSmall 6s infinite ease-in-out;
+      @include variables.blobSize(6, 6);
+      @include variables.blob-looking;
+    }
+
+    .body__blobs-container__blob5 {
+      content: "";
+      position: absolute;
+      top: 5%;
+      left: 10%;
+      background: linear-gradient(0deg, rgba(51, 2, 198, 0.7) 0%, rgba(81, 2, 191, 0.7) 100%);
+      border-radius: 31% 42% 31% 64% / 36% 53% 28% 46%;
+      filter: blur(1px);
+      animation: blobingBig 8s infinite ease-in-out;
+      @include variables.blobSize(10, 12);
+      @include variables.blob-looking;
+    }
+
+  }
+
+  .body__scroll {
+    z-index: 200;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100vw;
+    min-width: 250px;
+    max-width: 100vw;
+
+    &::-webkit-scrollbar {
+      @include variables.scrollbar;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      @include variables.scrollbar-thumb
+    }
+
+    &::-webkit-scrollbar-button {
+      @include variables.scrollbar-button
+    }
+
+    &::-webkit-scrollbar-corner {
+      @include variables.scrollbar-corner;
+    }
+
+    .body__background-wrapper {
+      display: flex;
+      flex-direction: column;
+      color: variables.$color;
+      font-size: variables.$font-size;
+
+
+      .body__content {
+
+        display: grid;
+        grid-template-columns: minmax(0, 5fr) minmax(0, 2fr);
+        gap: 1rem;
+        position: relative;
+        font-size: 24px;
+        padding-inline: 10%;
+        min-height: calc(100lvh - 54px - 32px);
+        max-width: 100vw;
+
+
+        @media screen and (max-width: 1000px) {
+
+          font-size: 20px;
+          grid-template-columns: calc(100% - 4vw - 20px) 20px;
+          gap: 0;
+          padding-inline: 2vw;
+          min-height: calc(100lvh - 54px - 32px);
+          max-width: 100vw;
+        }
+
+        @media screen and (min-width: 1400px) {
+          grid-template-columns: minmax(0, 5fr) minmax(0, 1.5fr);
+        }
+
+        .body__content__text-area {
+          margin: auto;
+          z-index: 100;
+          width: 100%;
+          height: 100%;
+          //max-width: calc(98vw - 18px);
+          @media screen and (max-width: 1000px) {
+            width: calc(98vw - 18px);
+          }
+        }
+      }
+
+      .body__footer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: auto;
+        @include variables.glass-looking;
+        border-radius: variables.$border-radius variables.$border-radius 0 0;
+      }
+    }
+  }
+}
+
+
+
+
