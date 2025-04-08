@@ -8,3 +8,4 @@ export const CONTAINERS_ROUTE:string = "/CSS/containers";
 export const POSITIONS_ROUTE:string = "/CSS/positions";
 export const GRADIENT_ROUTE:string = "/CSS/gradients";
 export const STRING_ROUTES:string = "/JS/strings"
+export const ARRAYS_ROUTES:string = "/JS/arrays"

@@ -6,7 +6,7 @@ import {
     CONTAINERS_ROUTE,
     FORMS_ROUTE,
     POSITIONS_ROUTE,
-    GRADIENT_ROUTE, STRING_ROUTES
+    GRADIENT_ROUTE, STRING_ROUTES, ARRAYS_ROUTES
 } from "@/constants/routes";
 
 export const contentList: {
@@ -34,6 +34,7 @@ export const contentList: {
     {
         chapter: "JS", paragraph: [
             {description: "Строки", link: STRING_ROUTES},
+            {description: "Массивы", link: ARRAYS_ROUTES},
         ]
     },
     {chapter: "REACT", paragraph: []}
