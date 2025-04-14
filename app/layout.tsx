@@ -19,11 +19,11 @@ export default function RootLayout({
         <html lang="ru">
         <body className={"body"}>
         <div className={"body__blobs-container"}>
-            <div className={"body__blobs-container__blob1"}/>
-            <div className={"body__blobs-container__blob2"}/>
-            <div className={"body__blobs-container__blob3"}/>
-            <div className={"body__blobs-container__blob4"}/>
-            <div className={"body__blobs-container__blob5"}/>
+            {/*<div className={"body__blobs-container__blob1"}/>*/}
+            {/*<div className={"body__blobs-container__blob2"}/>*/}
+            {/*<div className={"body__blobs-container__blob3"}/>*/}
+            {/*<div className={"body__blobs-container__blob4"}/>*/}
+            {/*<div className={"body__blobs-container__blob5"}/>*/}
         </div>
         <div className={"body__scroll"}>
             <div className={"body__background-wrapper"}>

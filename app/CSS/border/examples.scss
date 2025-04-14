@@ -1,0 +1,75 @@
+@use "../../../constants/variables";
+
+.el-example{
+  height: 100px;
+  width: 200px;
+  border-width: 10px;
+  border-style: dotted dashed groove outset;
+}
+
+.el-example-image{
+  height: 100px;
+  width: 200px;
+  border-width: 20px;
+  border-style: solid;
+  border-image: linear-gradient(rgb(246, 183, 60), rgb(77, 159, 12)) 10% / 20% stretch;
+}
+
+.el-example-round {
+  height: 100px;
+  width: 200px;
+  border: 2px solid white;
+  border-radius: 20px 30px 40px 50px / 50px 40px 30px 20px;
+}
+
+.with-gap{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+
+  * {
+    margin-block: 1rem ;
+  }
+}
+
+.table{
+  flex: 1 1 250px;
+  max-width: 250px;
+  width: 250px;
+  text-align: center;
+
+  td{
+    height: 50px;
+    border: 6px solid yellow;
+    border-right-color: red;
+    border-bottom-color: green;
+    border-left-color: blue;
+  }
+}
+
+.no-spacing{
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+.spacing{
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+.no-collapse{
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+.collapse{
+  border-spacing: 10px;
+  border-collapse: collapse;
+}
+
+.last{
+  margin-bottom: 1rem;
+}

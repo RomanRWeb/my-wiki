@@ -1,0 +1,23 @@
+@use "../../../constants/variables";
+
+.table-wrapper{
+  width: 100%;
+}
+
+.table{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  :nth-child(1){
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  :nth-child(2){
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  :nth-child(even){
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+  }
+}
+
+.cell{
+  text-align: center;
+}

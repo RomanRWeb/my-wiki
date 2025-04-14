@@ -6,7 +6,7 @@ import {
     CONTAINERS_ROUTE,
     FORMS_ROUTE,
     POSITIONS_ROUTE,
-    GRADIENT_ROUTE, STRING_ROUTES, ARRAYS_ROUTES
+    GRADIENT_ROUTE, STRING_ROUTE, ARRAYS_ROUTE, BORDER_ROUTE, BACKGROUND_ROUTE
 } from "@/constants/routes";
 
 export const contentList: {
@@ -29,12 +29,14 @@ export const contentList: {
             {description: "Селекторы", link: SELECTOR_ROUTE},
             {description: "Позицонирование", link: POSITIONS_ROUTE},
             {description: "Градиенты", link: GRADIENT_ROUTE},
+            {description: "Border", link: BORDER_ROUTE},
+            {description: "Background", link: BACKGROUND_ROUTE},
         ]
     },
     {
         chapter: "JS", paragraph: [
-            {description: "Строки", link: STRING_ROUTES},
-            {description: "Массивы", link: ARRAYS_ROUTES},
+            {description: "Строки", link: STRING_ROUTE},
+            {description: "Массивы", link: ARRAYS_ROUTE},
         ]
     },
     {chapter: "REACT", paragraph: []}

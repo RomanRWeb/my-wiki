@@ -101,7 +101,8 @@ export default function Positions() {
                 </h3>
                 <p className={"section__paragraph"}>
                     Элементы с <code className={"section__code"}>position: sticky</code> ведут себя как относительные до
-                    тех пор, пока не достигнут определенной позиции при прокрутке (у родительского контейнера должно быть
+                    тех пор, пока не достигнут определенной позиции при прокрутке (у родительского контейнера должно
+                    быть
                     установлено свойство <code className={"section__code"}>overflow: scroll</code>), после чего они
                     становятся
                     фиксированными. Это полезно для создания &#34;липких&#34; заголовков или навигационных панелей.
@@ -109,10 +110,24 @@ export default function Positions() {
                 <pre className={"section__code"}>
                     {examples[4]}
                 </pre>
+                <h3 className={"section__paragraph center"}>
+                    z-index
+                </h3>
+                <p className={"section__paragraph"}>
+                    <code className={"section__code"}>z-index</code>: определяет положение позиционированного элемента и
+                    его дочерних элементов или флекс-элементов по оси z. Перекрывающие элементы с большим значением
+                    z-index будут накладываться поверх элементов с меньшим z-index.
+                </p>
+                <div className={"section__example-container"} style={{minHeight: "180px"}}>
+                    <span className={"el-z abs-1"}>z-index: 1</span>
+                    <span className={"el-z abs-2"}>z-index: 2</span>
+                    <span className={"el-z abs-3"}>z-index: 3</span>
+                    <span className={"el-z abs-4"}>z-index: 4</span>
+                </div>
                 <p className={"section__paragraph"}>
                     Проиллюстрируем это все небольшим примером:
                 </p>
-                <div className={"section__example-container"} style={{translate: "0"}}>
+                <div className={"section__example-container"} style={{translate: "0", marginBottom: "1rem"}}>
                     <span className={"el__fixed"}>position: fixed</span>
                     <div className={"wrapper"}>
                         <div className={"container__scroll"}>
@@ -126,7 +141,6 @@ export default function Positions() {
                         </div>
                     </div>
                 </div>
-                <br></br>
             </section>
         </article>
     )

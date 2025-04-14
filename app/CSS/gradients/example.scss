@@ -1,0 +1,114 @@
+.el-linear-gradient {
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(to right, white, black);
+}
+
+.el-radial-gradient {
+  height: 200px;
+  width: 100%;
+  background: radial-gradient(circle, white, black);
+}
+
+.el-conic-gradient {
+  height: 200px;
+  width: 100%;
+  background: conic-gradient(white, black);
+}
+
+.el-multiple-colors {
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(to right, red, orange, yellow, green);;
+}
+
+.el-points {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to right, red 0%, orange 15%, yellow 45%, green 100%);
+}
+
+
+.el-points-lined {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(
+                  to right,
+                  red 25%,
+                  orange 25%,
+                  orange 50%,
+                  yellow 50%,
+                  yellow 75%,
+                  green 75%
+  );
+}
+
+.el-offset {
+  width: 100%;
+  height: 200px;
+  background: radial-gradient(circle at 0% 50%, red 0%, yellow 30%, orange 50%, green 75%);
+}
+
+.nothing {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.funny-container {
+  width: 200%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: -50%;
+}
+
+@keyframes line-sliding {
+  from {
+    transform: translateX(30%);
+  }
+  to {
+    transform: translateX(-70%);
+  }
+}
+
+.el-repeating{
+  width: 200%;
+  height: 200px;
+  background: repeating-linear-gradient(
+                  90deg,
+                  white 0%,
+                  white 5%,
+                  black 5%,
+                  black 10%,
+  );
+}
+
+.el-repeating-1{
+  width: 200%;
+  height: 40px;
+  background: repeating-linear-gradient(
+                  90deg,
+                  white 0%,
+                  white 5%,
+                  black 5%,
+                  black 10%,
+  );
+}
+
+.el-repeating-2{
+  width: 200%;
+  height: 40px;
+  background: repeating-linear-gradient(
+                  90deg,
+                  black 0%,
+                  black 5%,
+                  white 5%,
+                  white 10%,
+  );
+}
+
+.animated {
+  animation: line-sliding 4s infinite linear;
+}
+

@@ -14,11 +14,11 @@
   }
 
   .code-gap-inline {
-    margin-inline: 1ch;
+    margin-inline: 0.5ch;
   }
 
   .code-gap-last-word {
-    margin-left: 1ch
+    margin-left: 0.5ch;
   }
 
   .section__code {
@@ -69,10 +69,16 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: calc(100% - 1rem);
+    margin-inline: 0.5rem;
+    position: relative;
 
     .example {
-      width: max-content;
-      max-width: 82vw;
+      max-width: 90vw;
+      text-wrap: auto;
     }
 
     .result-wrapper {
@@ -80,16 +86,17 @@
       border: 1px solid rgba(255, 255, 255, 0.4);
       border-radius: 5px;
       align-items: center;
-      width: clamp(10px, 100%, 82vw);
+      width: clamp(10px, 100%, 90vw);
       justify-content: center;
-      max-width: 82vw;
       position: relative;
-      padding-top: 58px;
-      padding-inline: 10px;
+      padding-top: 42px;
+      padding-inline: 0.5rem;
+      padding-bottom: 0.5rem;
+      overflow: hidden;
+      gap: 1rem;
 
       .result{
         overflow-x: scroll;
-        padding-bottom: 18px;
 
         &::-webkit-scrollbar {
           @include variables.scrollbar;

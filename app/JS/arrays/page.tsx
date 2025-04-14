@@ -172,7 +172,7 @@ export default function Arrays() {
                         <code className={"section__code"}>
                             reduce()
                         </code> : применяет функцию reducer к каждому элементу массива (слева-направо), возвращая одно
-                        результирующее значение.
+                        результирующее значение. Начальное значение аккамулятора можно задать через запятую после функции
                         массива.
                         <div className={"example"}>
                             <pre className={"section__code"}>
