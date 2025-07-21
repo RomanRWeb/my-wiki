@@ -61,7 +61,7 @@ export default function Semantic_tags() {
                     <li className={"section__list-element"}>
                         <code className={"section__code"}>{"<button>"}</code>
                         : используются для кнопок, удобно применять внутри тэга
-                        <code className={"section__code code-gap-last-word"}>{"<form>"}</code>
+                        <code className={"section__code code-gap-left"}>{"<form>"}</code>
                         .
                     </li>
                     <li className={"section__list-element"}>
@@ -79,7 +79,7 @@ export default function Semantic_tags() {
                     <li className={"section__list-element"}>
                         <code className={"section__code"}>{"<a>"}</code>
                         : для ссылок, в Next.js этот элемент заменяется
-                        <Link className={"section__code code-gap-last-word link"}
+                        <Link className={"section__code code-gap-left link"}
                               href={"https://nextjs.org/docs/pages/api-reference/components/link"}
                               target="_blank"> {"<Link>"} </Link>
                         .
@@ -87,7 +87,7 @@ export default function Semantic_tags() {
                     <li className={"section__list-element"}>
                         <code className={"section__code"}>{"<img>"}</code>
                         : для ссылок, в Next.js этот элемент заменяется
-                        <Link className={"section__code code-gap-last-word link"}
+                        <Link className={"section__code code-gap-left link"}
                               href={"https://nextjs.org/docs/pages/api-reference/components/image"}
                               target="_blank"> {"<Image>"} </Link>
                         .
@@ -98,7 +98,7 @@ export default function Semantic_tags() {
                           href={"https://developer.mozilla.org/ru/docs/Web/HTML/Element"}
                           target="_blank"> {"тут"} </Link>
                     или
-                    <Link className={"code-gap-last-word link"}
+                    <Link className={"code-gap-left link"}
                           href={"https://html5css.ru/tags/default.php"}
                           target="_blank"> {"тут"} </Link>
                     .

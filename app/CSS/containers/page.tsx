@@ -39,7 +39,7 @@ export default function Containers() {
                         <code className={"section__code"}>{"<display-listitem>"}</code> - создаёт блоковый бокс для
                         контента и отдельный строковый (inline) бокс для элемента списка. По сути включает в себя только
                         одно свойство <code className={"section__code"}>display</code>, а именно
-                        <code className={"section__code code-gap-last-word"}>list-item</code>. Элемент с этим
+                        <code className={"section__code code-gap-left"}>list-item</code>. Элемент с этим
                         свойством создаст псевдоэлемент
                         <code className={"section__code code-gap-inline"}>::marker</code>с определяемым<code
                         className={"section__code code-gap-inline"}>list-style</code>свойствами (например, маркерной
@@ -62,7 +62,7 @@ export default function Containers() {
                     <li className={"section__list-element"}>
                         <code className={"section__code"}>{"<display-box>"}</code> - эти значения определяют,
                         генерирует ли элемент отображение боксов вообще. Состоит всего из 2 значений -
-                        <code className={"section__code code-gap-last-word"}>{"content"}</code> и <code
+                        <code className={"section__code code-gap-left"}>{"content"}</code> и <code
                         className={"section__code"}>{"none"}</code>.
                         Элементы с значением <code className={"section__code"}>{"content"}</code> не производят
                         конкретный
@@ -96,7 +96,6 @@ export default function Containers() {
                     (inline) боксов элемента, которые не создают разрывов строк перед собой или после себя. В нормальном
                     потоке следующий элемент будет находиться на той же линии, если есть пробел.
                 </p>
-                <br></br>
                 <p className={"section__paragraph"}>
                     Теперь рассмотрим <code className={"section__code"}>{"<display-inside>"}</code>:
                 </p>
@@ -118,7 +117,7 @@ export default function Containers() {
                 <p className={"section__paragraph"}>
                     <code className={"section__code"}>flex</code> - Элемент ведет себя как блочный элемент и размещает
                     свое содержимое в соответствии с моделью flexbox. Самый популярный способ создания адаптивного
-                    пользовательского интерфейса.<Link className={"link"}
+                    пользовательского интерфейса. <Link className={"link"}
                     target={"_blank"} href={"https://developer.mozilla.org/ru/docs/Learn_web_development/Core/CSS_layout/Flexbox"}>Очень
                     полезная статья для изучения flexbox</Link>
                 </p>

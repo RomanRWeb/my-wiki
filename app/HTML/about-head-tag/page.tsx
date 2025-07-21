@@ -19,17 +19,17 @@ export default function headTags() {
             <section className={"page__section"}>
                 <p className={"section__paragraph"}>
                     Содержимое
-                    <code className={"section__code code-gap-last-word"}>{"<head>"}</code>, в отличие от содержимого
+                    <code className={"section__code code-gap-left"}>{"<head>"}</code>, в отличие от содержимого
                     элемента
-                    <code className={"section__code code-gap-last-word"}>{"<body>"}</code>, не отображается на странице.
+                    <code className={"section__code code-gap-left"}>{"<body>"}</code>, не отображается на странице.
                     Задача
                     <code className={"section__code code-gap-inline"}>{"<head>"}</code>— хранить метаданные документа.
                 </p>
                 <p className={"section__paragraph"}>
                     Метаданные — данные, которые описывают данные. В HTML место для метаданных
-                    документа — элемент<code className={"section__code code-gap-last-word"}>{"<meta>"}</code>.
+                    документа — элемент<code className={"section__code code-gap-left"}>{"<meta>"}</code>.
                     Существует множество разновидностей
-                    <code className={"section__code code-gap-last-word"}>{"<meta>"}</code>, однако тут я рассмотрю
+                    <code className={"section__code code-gap-left"}>{"<meta>"}</code>, однако тут я рассмотрю
                     только
                     несколько самых популярных.
                 </p>

@@ -4,6 +4,7 @@ import "./layout.scss";
 import Header from "../components/Header/Header"
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer"
+import CookieBanner from "@/components/Cookie-banner/Cookie-banner";
 
 export const metadata: Metadata = {
     title: "",
@@ -25,6 +26,7 @@ export default function RootLayout({
             {/*<div className={"body__blobs-container__blob4"}/>*/}
             {/*<div className={"body__blobs-container__blob5"}/>*/}
         </div>
+        <CookieBanner></CookieBanner>
         <div className={"body__scroll"}>
             <div className={"body__background-wrapper"}>
                 <Header/>

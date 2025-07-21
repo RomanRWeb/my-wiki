@@ -92,7 +92,7 @@ export default function Positions() {
                     <li className={"section__list-element"}>
                         Радиальные градиенты
                         <p className={"section__paragraph"}>Радиальные градиенты создаются с помощью функции
-                            <code className={"section__code code-gap-last-word"}>radial-gradient()</code>. Они
+                            <code className={"section__code code-gap-left"}>radial-gradient()</code>. Они
                             представляют собой переход
                             цветов от центра к краям.</p>
                         <code className={"section__code"}>
@@ -112,7 +112,7 @@ export default function Positions() {
                             <li className={"section__list-element"}>
                                 position: Положение центра градиента (например, <code
                                 className={"section__code"}>center</code>, <code className={"section__code"}>top</code>,
-                                <code className={"section__code code-gap-last-word"}>left</code> и т.д.).
+                                <code className={"section__code code-gap-left"}>left</code> и т.д.).
                             </li>
                         </ul>
                         <div className={"section__example-container"}>
@@ -127,7 +127,7 @@ export default function Positions() {
                     <li className={"section__paragraph"}>
                         Конические градиенты
                         <p className={"section__paragraph"}>Конические градиенты создаются с помощью функции
-                            <code className={"section__code code-gap-last-word"}>conic-gradient()</code>. Они
+                            <code className={"section__code code-gap-left"}>conic-gradient()</code>. Они
                             представляют собой переход
                             цветов, обёрнутых вокруг центральной точки.</p>
                         <p className={"section__paragraph"}>

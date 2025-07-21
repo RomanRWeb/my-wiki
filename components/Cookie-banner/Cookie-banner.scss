@@ -1,0 +1,63 @@
+@use "../../constants/variables";
+
+.banner {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(200px, 80%, 600px);
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  z-index: 900;
+
+  @media screen and (max-width: 800px){
+
+  }
+
+  .banner__wrapper {
+
+    @include variables.glass-looking;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    font-size: variables.$font-size;
+    text-align: center;
+    gap: 0.5rem;
+
+    h1{
+      margin-block: 0;
+    }
+
+    .banner__text {
+
+    }
+
+    .banner__button-wrapper{
+
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      gap: 0.5rem;
+      justify-content: space-around;
+      align-items: center;
+
+      @media screen  and (max-width: 800px) {
+        flex-direction: column;
+      }
+
+      .banner__button{
+        color: white;
+        width: 100%;
+        @include variables.button-style
+      }
+
+    }
+  }
+}
+
+

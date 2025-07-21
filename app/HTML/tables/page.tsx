@@ -107,10 +107,9 @@ export default function Tables() {
                     </li>
                     <li className={"section__list-element"}>
                         Таблицы не реагируют автоматически на тип устройства: У надлежащих контейнеров
-                        (например,
-                        <code className={"section__code code-gap-last-word"}> {"<header>"} </code>,
-                        <code className={"section__code code-gap-last-word"}> {"<section>"} </code>,
-                        <code className={"section__code code-gap-inline"}> {"<article>"} </code> и т.п.)
+                        (например, <code className={"section__code"}>{"<header>"}</code>, <code
+                        className={"section__code"}>{"<section>"}</code>, <code
+                        className={"section__code"}>{"<article>"}</code> и т.п.)
                         ширина по умолчанию равна 100% от их
                         родительского элемента. У таблиц же размер по умолчанию подстраивается под их содержимое, так
                         что чтобы они одинаково хорошо работали на разных типах устройств необходимо принимать
@@ -118,14 +117,11 @@ export default function Tables() {
                     </li>
                 </ul>
                 <p className={"section__paragraph"}>
-                    Таблица задается тэгом<code className={"section__code code-gap-last-word"}>{"<table>"}</code>,
-                    внутрь
-                    поместим тэги<code className={"section__code code-gap-inline"}>{"<caption>"}</code>- он нужен для
-                    указания названия
-                    таблицы. <code className={"section__code"}>{"<thead>"}</code>,
-                    <code className={"section__code code-gap-inline"}>{"<tbody>"}</code>и<code
-                    className={"section__code code-gap-last-word"}>{"<tfoot>"}</code> используются для создания
-                    заголовка таблицы,
+                    Таблица задается тегом <code className={"section__code"}>{"<table>"}</code>, внутрь поместим
+                    теги <code className={"section__code"}>{"<caption>"}</code> - он нужен для указания названия
+                    таблицы. <code className={"section__code"}>{"<thead>"}</code>,<code
+                    className={"section__code"}>{"<tbody>"}</code> и <code
+                    className={"section__code"}>{"<tfoot>"}</code> используются для создания заголовка таблицы,
                     основного тела таблицы и суммирующей строки в таблице. Таким образом каркас таблицы будет выглядеть
                     так:
                 </p>
@@ -133,11 +129,9 @@ export default function Tables() {
                     {table_example}
                 </pre>
                 <p className={"section__paragraph"}>
-                    Таблицы заполняются построчно, строка это тэг<code
-                    className={"section__code code-gap-inline"}>{"<tr>"}</code>(table row),
-                    в строку записываются значения в тэге<code
-                    className={"section__code code-gap-inline"}>{"<td>"}</code>(table data). Для примера построим
-                    небольшую таблицу:
+                    Таблицы заполняются построчно, строка это тег <code className={"section__code"}>{"<tr>"}</code>(table
+                    row), в строку записываются значения в теге <code className={"section__code"}>{"<td>"}</code>(table
+                    data). Для примера построим небольшую таблицу:
                 </p>
                 <div className={"section__example-container"}>
                     <pre className={"section__code example"}>
@@ -163,7 +157,7 @@ export default function Tables() {
                     </div>
                 </div>
                 <p className={"section__paragraph"}>
-                    Теперь построим более сложную таблицу используя почти все HTML тэги для этого:
+                    Теперь построим более сложную таблицу используя почти все HTML теги для этого:
                 </p>
                 <div className={"section__example-container"} style={{marginBottom: "1rem"}}>
                     <pre className={"section__code multi-line example"}>{table_example_final}</pre>

@@ -1,0 +1,60 @@
+@use "../../../constants/variables";
+
+.radio-0 {
+  display: none;
+}
+
+.radio-100 {
+  display: none;
+}
+
+.reserved {
+  flex: auto !important;
+  height: 200px;
+}
+
+.wrapper-example-inline {
+  display: flex;
+  flex-wrap: wrap;
+
+  .el-margin-inline {
+    background-color: #5c9eb5;
+    background-clip: content-box;
+    margin-inline: 0.5ch;
+    transition: 0.2s linear margin-top;
+    position: relative;
+
+    &:after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #dfad50;
+      transition: 0.2s linear top, 0.2s linear padding-top;
+    }
+  }
+}
+
+.section__example-container:has( > .rad-container> .radio-10:checked+label) {
+  .result-wrapper > .wrapper-example-inline > .el-margin-inline {
+    margin-top: 0;
+    &:after {
+      top: 0;
+      padding-top: 0;
+    }
+  }
+}
+
+
+.section__example-container:has( > .rad-container> .radio-100:checked+label) {
+  .result-wrapper > .wrapper-example-inline > .el-margin-inline {
+    margin-top: 100px;
+    &:after {
+      top: -100px;
+      padding-top: 100px;
+    }
+  }
+}

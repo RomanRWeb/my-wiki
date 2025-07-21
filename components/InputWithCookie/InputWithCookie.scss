@@ -1,0 +1,68 @@
+@use "../../constants/variables";
+
+@font-face {
+  font-family: 'GreatVibes';
+  src: local('GreatVibes'), url(../../public/fonts/GreatVibes-Regular.ttf) format('truetype');
+}
+
+@keyframes rolling {
+  0%{
+    transform: rotate(0deg)
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.inputWithCookie-wrapper {
+  width: 304px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -127px;
+    width: 304px;
+    height: 304px;
+    //border-radius: 50%;
+    z-index: -1;
+    background: conic-gradient(
+                    red,
+                    orange,
+                    yellow,
+                    green,
+                    aqua,
+                    blue,
+                    violet,
+                    red
+    );
+  }
+
+  &:focus-within {
+    &:after {
+      animation: rolling 4s linear infinite;
+    }
+  }
+
+  .inputWithCookie {
+    border-radius: 5px;
+    width: 300px;
+    z-index: 1;
+    margin: 2px;
+    border: none;
+    background-color: #4c4c4c;
+    color: variables.$color;
+    font-family: "GreatVibes", serif;
+    font-size: 30px;
+
+    &:focus {
+      outline: none;
+
+    }
+  }
+}
+
+;

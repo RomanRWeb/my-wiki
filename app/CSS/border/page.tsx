@@ -29,7 +29,7 @@ border-image: linear-gradient(rgb(246, 183, 60), rgb(77, 159, 12)) 10% / 20% str
                     Свойство <code className={"section__code"}>border</code> это универсальное свойство для указания
                     всех
                     персональных свойств границ за раз:
-                    <code className={"section__code code-gap-last-word"}>border-width</code>, <code
+                    <code className={"section__code code-gap-left"}>border-width</code>, <code
                     className={"section__code"}>border-style</code>, и <code
                     className={"section__code"}>border-color</code>.
                 </p>
